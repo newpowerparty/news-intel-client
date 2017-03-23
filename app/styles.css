@@ -1,0 +1,494 @@
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i';
+
+html, body {
+  font-style: 15px;
+}
+
+body {
+  font-family: 'Open Sans',Helvetica Neue,Helvetica,Arial,Heiti TC,Apple LiGothic Medium,\\5FAE\8EDF\6B63\9ED1\9AD4,sans-serif;
+  font-weight: normal;
+  line-height: 1.5;
+}
+
+.copyrightText {
+  color: rgba(209, 210, 211, 1);
+  font: 6px;
+}
+
+.formText {
+  color: rgba(70, 71, 72, 1);
+}
+
+.linkDecorated {
+  text-decoration: underline;
+  color: #333;
+}
+
+a {
+  color: #333;
+}
+
+a:hover {
+  color: #555;
+}
+
+/* App nav bar */
+
+.bar {
+  border-bottom: 1px solid rgba(0,0,0,.12);
+}
+
+.appBarLogo {
+  display: inline-block;
+  width: 64px;
+}
+
+.appBarNav {
+  /*padding-top: 15px;*/
+  font-size: 15px;
+}
+
+.appBarExtra {
+  padding-top: 15px;
+  font-size: 15px;
+  text-align: right;
+}
+
+.navLink {
+  display: inline-block;
+  line-height: 1em;
+  margin: 0 8px;
+  color: #444;
+  padding: 23px 0;
+  cursor: pointer;
+}
+
+.navLinkSelected {
+  composes: navLink;
+  color: #d11212;
+  border-bottom: 3px solid #d11212;
+}
+
+.navLink:hover, .navLink:focus {
+  color: #d11212;
+}
+
+.navButton {
+  background-color: #d11212;
+  color: #fff;
+  height: 36px;
+  line-height: 0;
+  padding: 10px 20px;
+  margin: 0 8px;
+  vertical-align: inherit;
+
+  border-radius: 18px;
+  border-width: 0;
+  font-size: 12px;
+}
+
+.navButton:hover, .navButton:active, .navButton:focus {
+  background-color: #fff;
+  color: #d11212;
+}
+
+.langLink {
+  display: inline-block;
+  line-height: 35px;
+  color: #444;
+}
+
+.langLink:hover {
+  text-decoration: underline;
+  color: #d11212;
+}
+
+.socialIcon {
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  margin-left: 10px;
+}
+
+.socialIcon img{
+  width: 100%;
+  height: 100%;
+}
+
+.headerContainer {
+  width: 100%;
+  max-width: 1170px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* End nav bar */
+
+.headerItem {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.pageTop {
+  text-align: center;
+  margin-top: 20px;
+}
+
+
+@media (min-width: 1024px){
+
+  .heroTextWrap{
+    width: 50%;
+  }
+
+}
+
+.heroTextWrap{
+  margin: auto;
+}
+
+.heroBtn {
+  background-color: #d11212;
+  border: none;
+  color: #fff;
+
+  border-radius: 18px;
+}
+
+.heroBtn:hover {
+  background-color: #FFF;
+  color: #d11212;
+}
+
+.heroImg {
+  display: block;
+  margin: 0;
+  width: 100%;
+}
+
+.docIconText {
+  font-weight: bold;
+  color: #d11212;
+  text-align: center;
+}
+
+.redDivider{
+  height: 5px;
+  width: 100%;
+  background-color: #d11212;
+}
+
+@media (max-width: 768px) {
+  .heroImg {
+    margin-left: -40%;
+    width: 180%;
+    max-width: none;
+  }
+}
+
+.sponsor {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.landingBody {
+  text-align: center;
+}
+
+.pageBody {
+  text-align: left;
+  margin-bottom: 60px;
+}
+
+.heading {
+  font-size: 32px;
+  font-weight: 900;
+  margin: 30px;
+  line-height: 36px;
+}
+
+.headingWhiteText {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 900;
+  margin: 30px;
+  line-height: 36px;
+}
+
+.bodyText {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.letterBox {
+  border: 1px solid #CCC;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+.bodyWhiteText {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+@media (min-width: 1024px){
+
+  .bodyTextWrap{
+    /*width: 60%; */
+  }
+}
+
+.bodyTextBold {
+  composes: bodyText;
+  font-weight: 700;
+}
+
+.bodyTextBottom {
+  composes: bodyText;
+  margin-bottom: 60px;
+}
+
+.bodyTextWhite {
+  composes: bodyText;
+  color: white;
+}
+
+.eventInfo {
+  text-align: left;
+  padding-bottom: 5%;
+}
+
+.eventInfo p {
+  margin: 5px 0;
+}
+
+.infoLabel {
+  color: #d11212;
+  font-weight: 600;
+  margin: 10px 0 5px;
+}
+
+.eventInfo .infoLabel:first-child {
+  margin-top: 0;
+}
+
+.speakerButton {
+  background-color: #efedee;
+  margin-bottom: 40px;
+}
+
+.iconWrap{
+  display: table;
+  margin: auto;
+  margin-top: 45px;
+  margin-bottom: 22px;
+}
+
+.icon {
+  height: 65px;
+}
+
+.footer {
+  background-color: #333;
+  padding-top: 1%;
+}
+
+.footerLogo {
+  margin-top: 10px;
+}
+
+.greenDivider {
+  border-bottom: 5px solid #d11212;
+  height: 10px;
+  width: 100%;
+}
+
+.iceDivider {
+  border-bottom: 1px solid rgba(0,0,0,.12);
+}
+
+.staffCard {
+  height: 90px;
+  border-bottom: 1px solid rgba(0,0,0,.12)
+}
+
+.aboutSection {
+  border-bottom: 1px solid rgba(0,0,0,.12)
+}
+
+.staffCardHeading {
+  font-weight: 700;
+}
+
+.hamburger {
+  font-size: 30px;
+  position: absolute;
+  right: 0%;
+  top: 10px;
+  margin-right: 10px;
+  display: none;
+  cursor: pointer;
+}
+
+.dropDownUl {
+  list-style: none;
+  font-size: 16px;
+  color: #444;
+  padding: 0;
+  margin-bottom: 0;
+}
+
+.headerItemResponsive {
+  padding: 10px 20px;
+  border-bottom: 1px solid #DDD;
+}
+
+.headerItemResponsive a {
+  color: #444;
+}
+
+.headerItemResponsive a:hover {
+  color: #d11212;
+}
+
+
+@media (min-width: 1025px) {
+  .dropDownUl {
+    display: none;
+  }
+}
+
+
+.fullWidthImage {
+  display: block;
+  width: 100%;
+}
+
+.keywords {
+  margin: 10px;
+  padding: 10px;
+  border: 2.5px solid;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.25s ease-in;
+  -webkit-transition: all 0.25s ease-in;
+}
+
+.keywords:hover {
+  background-color: #333;
+  transform: rotate(3deg);
+  -webkit-transform: rotate(3deg);
+}
+
+.flexbox {
+  display: flex;
+  flex-wrap: wrap;
+  height: 500px;
+  list-style: none;
+  font-size: 20px;
+  align-content: flex-start;
+}
+
+.newsItem {
+  text-align: left;
+  margin-bottom: 25px;
+}
+
+.newsTitle {
+  font-weight: 700;
+  width: 90%;
+}
+
+.newsBody {
+  font-size: 14px;
+  width: 80%;
+}
+
+.sectionTitle {
+  text-align: left;
+  font-size: 12px;
+  margin-top: 15px;
+  width: 90%;
+  margin-bottom: 15px;
+  border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+.sectionTitleKeyword {
+  composes: sectionTitle;
+  width: 100%;
+}
+
+.feedUpdateTime {
+  float: right;
+}
+
+.selectionBar {
+  height: 50px;
+  display: flex;
+  padding-left: 10%;
+}
+
+.keywordSelection {
+  composes: keywords;
+  line-height: 5px;
+  font-weight: 700;
+}
+
+.keywordSelection:hover {
+  background-color: #333;
+  color: white;
+  transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+}
+
+.keywordSelected {
+  composes: keywordSelection;
+  background-color: #333;
+  color: white;
+}
+
+.keywordSubgroup {
+  font-size: 15px;
+  color: rgba(0,0,0,0.3);
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.keywordSubgroupSelected {
+  composes: keywordSubgroup;
+  color: #333;
+}
+
+.newsTime {
+  font-size: 12px;
+  font-weight: 700;
+}
+
+@media (max-width: 1024px) {
+  .appBarNav, .appBarExtra {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .socialIcon {
+    margin-left: 0;
+    margin-right: 10px;
+  }
+
+  .keywordSelection {
+    font-size: 10px;
+  }
+
+  .keywordSubgroup {
+    font-size: 10px;
+  }
+}
